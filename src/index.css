@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Romantic Valentine's Day Design System
+All colors MUST be HSL for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Romantic Background & Base Colors */
+    --background: 345 25% 8%;
+    --foreground: 345 15% 95%;
+
+    --card: 345 20% 12%;
+    --card-foreground: 345 15% 95%;
+
+    --popover: 345 20% 12%;
+    --popover-foreground: 345 15% 95%;
+
+    /* Romantic Primary Colors */
+    --primary: 350 85% 65%;
+    --primary-foreground: 345 15% 95%;
+
+    --secondary: 315 45% 25%;
+    --secondary-foreground: 345 15% 95%;
+
+    --muted: 345 15% 18%;
+    --muted-foreground: 345 10% 70%;
+
+    --accent: 290 60% 55%;
+    --accent-foreground: 345 15% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 345 15% 95%;
+
+    --border: 345 15% 25%;
+    --input: 345 15% 25%;
+    --ring: 350 85% 65%;
+
+    /* Romantic Color Palette */
+    --romantic-red: 350 85% 65%;
+    --romantic-pink: 330 75% 75%;
+    --romantic-gold: 45 95% 70%;
+    --romantic-white: 345 15% 95%;
+    --romantic-purple: 275 65% 60%;
+    --romantic-blue: 240 70% 65%;
+    
+    /* Aurora Colors */
+    --aurora-pink: 330 80% 70%;
+    --aurora-purple: 275 70% 65%;
+    --aurora-blue: 240 75% 70%;
+    
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(var(--romantic-red)), hsl(var(--romantic-pink)));
+    --gradient-aurora: linear-gradient(45deg, hsl(var(--aurora-pink)), hsl(var(--aurora-purple)), hsl(var(--aurora-blue)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--romantic-gold)), hsl(45 85% 80%));
+    --gradient-box: linear-gradient(145deg, hsl(350 60% 45%), hsl(350 80% 55%));
+
+    /* Shadows & Effects */
+    --shadow-romantic: 0 10px 40px hsl(var(--romantic-red) / 0.3);
+    --shadow-gold: 0 5px 20px hsl(var(--romantic-gold) / 0.4);
+    --shadow-aurora: 0 0 50px hsl(var(--aurora-pink) / 0.6);
+    --glow-heart: 0 0 20px hsl(var(--romantic-red) / 0.8);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Same as light mode for this romantic theme */
+    --background: 345 25% 8%;
+    --foreground: 345 15% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
